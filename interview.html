@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sofa</title>
+    <style>
+        body {
+            height: 100vh;
+            width: 100%;
+            font-family: arial;
+            display: grid;
+            grid-template-columns: 5fr 7fr;
+        }
+
+        .details {
+            margin-left: 10px;
+        }
+
+        .off {
+            background-color: rgb(152, 250, 152);
+            padding: 5px;
+        }
+
+        .button {
+
+            background-color: black;
+            color: aliceblue;
+            border: none;
+            padding: 11px 72px;
+
+
+
+        }
+
+        .bi-heart {
+            align-items: center;
+            padding-inline: 50px;
+            font-size: 15px;
+            margin-top: 50px;
+        }
+
+        .name.p {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .paragraph {
+            color: gray;
+
+            justify-content: center;
+
+        }
+
+        @media(max-width:450px) {
+            body {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="image">
+        <div class="photo">
+            <span class="new"><b>NEW</b></span><br><br>
+            <span class="off">-60%</span>
+            <img src="public/image/sofa.jpg" height="180px" width="100%">
+
+        </div>
+
+    </div>
+    <div class="details">
+        <div>
+            <span class="bi bi-star-fill"> </span>
+            <span class="bi bi-star-fill"> </span>
+            <span class="bi bi-star-fill"> </span>
+            <span class="bi bi-star-fill"> </span>
+            <span class="bi bi-star-fill"> </span>
+        </div>
+        <div class="name">
+            <p>Off-Whitw Pillow</p>
+        </div>
+        <div>
+            <span class="bi bi-currency-dollar">7.99</span>
+            <s><span class="bi bi-currency-dollar">13.00</span></s>
+        </div>
+        <div class="paragraph">
+            <p>Super soft cushion cover in off.white with a tactile pattern that enhances the different tones in the
+                pile and base.</p>
+        </div>
+        <div>
+            <button class="button">Add to cart</button><br>
+            <span class="bi bi-heart"><b>Wishlist</b></span>
+
+        </div>
+    </div>
